@@ -9,7 +9,7 @@
 | 18.01.2025 | 3 | Cisco: chapter1  |   Chapters 1.1-1.5|
 | 18.01.2025 | 1 | Cisco: chapter1  | recap + module quiz 1.6 |
 | 23.01.2025 | 2 | Lecture, portswigger  | Participating lecture, exploring portswigger  |
-| 23.01.2025 | 2 | Kick-off lecture  | Lecture recording  |
+| 23.01.2025 | 1 | Portswigger labs + studying material  | sql injection labs  |
 | 30.10.2024 | 2 | Kick-off lecture  | Lecture recording  |
 | 30.10.2024 | 2 | Kick-off lecture  | Lecture recording  |
 | 30.10.2024 | 2 | Kick-off lecture  | Lecture recording  |
