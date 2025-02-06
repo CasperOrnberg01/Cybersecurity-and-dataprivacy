@@ -15,6 +15,6 @@
 | 27.1.2025 | 2 | Cisco chapter 5, final exam  | Course completion  |
 | 5.2.2025 | 1 | portswigger labs  | authentication  |
 | 6.2.2025 | 1 | portswigger labs| authentication labs completed + reflection  |
-| 6.2.2025 | 2 | Kick-off lecture  | Lecture recording  |
+| 6.2.2025 | 2 | portswigger  | access control labs + reflections.  |
 | 30.10.2024 | 2 | Kick-off lecture  | Lecture recording  |
 | 30.10.2024 | 2 | Kick-off lecture  | Lecture recording  |
