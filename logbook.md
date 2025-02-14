@@ -17,4 +17,5 @@
 | 6.2.2025 | 1 | portswigger labs| authentication labs completed + reflection  |
 | 6.2.2025 | 2 | portswigger  | access control labs + reflections.  |
 | 14.2.2025 | 2 | The booking system project  | Lecture online  |
-| 30.10.2024 | 2 | Kick-off lecture  | Lecture recording  |
+| 14.2.2025 | 1 | docker/web app + zap HAR/HUD | Lecture recording  |
+| 14.2.2025 | 2 | zap HAR/HUD testing + raport.md and transferring report from vm to local pc  | MD report and testing done, github and submission to be done next time  |
