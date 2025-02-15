@@ -52,3 +52,4 @@
 - **Test Reports and Supporting Evidence:**
   [Checkmarx ZAP report](2025-02-14-Penetration-test1.md)
 
+![SQL-injections were able to get through validation](phase1_sql.png)
