@@ -33,18 +33,25 @@
 - **Categorization:**
   - **Red (Critical):**  
     -Passwords in database not hashed ---> All user info in db are in high risk if breach happens, mostly password since people tend to use same passwords across different platforms. Also this causes internal threat, since administrators see user password in plain text.
+    
     -Path traversal ---> attacker might access files, or directories that are located outside the web document's root dir
+    
     -SQL-injections ---> SQL injections to manipulate page results are possible, where zap got 7 hits, and after manually analyzing with burp suite, it seems that sql-injections in correct form can pose a threat to this system. Sql injections also were able to cause flaws in assinging roles for registering users.
 
   - **Yellow (Medium):**  
     -Content security policy - Header Not Set ---> can be used to steal data or spread malware from the site.
+    
     -Format string errors ---> attacker might be able to manipulate/read system or its data.
+    
     -Missing anti-clickjacking Header ---> clickjacking can manipulate users to click something that wasnt meant to do.
 
   - **Green (Low):**  
     -Application error disclosure ---> error that could reveal attacker sensitive info, such as location of files etc.. to carry out more and different types of attacks
+    
     -X-Content-Type-Options Header Missing ---> allows attacker to perform content type sniffing attacks
+    
     -User Agent Fuzzer ---> vulnerability where user agent string can be manipulated to exploit weaknesses how the system handles user agent info.
+    
     -System lets user create account without rightful age validation...
 
 
