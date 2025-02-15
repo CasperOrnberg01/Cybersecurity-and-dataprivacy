@@ -20,7 +20,7 @@
 | 14.2.2025 | 1 | docker/web app + zap HAR/HUD | Lecture recording  |
 | 14.2.2025 | 2 | zap HAR/HUD testing + raport.md and transferring report from vm to local pc  | MD report and testing done, github and submission to be done next time  |
 | 15.2.2025 | 2 | penetration testing zap + burp | results + findings for report  |
-| x | x | x | x  |
+| 15.2.2025 | 2 | Writing report| report done  |
 | x | x | x | x  |
 | x | x | x | x  |
 | x | x | x | x  |
