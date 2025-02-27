@@ -60,3 +60,33 @@
   [Checkmarx ZAP report](2025-02-14-Penetration-test1.md)
 
 ![SQL-injections were able to get through validation](phase1_sql.png)
+
+
+# Penetration testing report PART 2 updates
+
+## 1. Introduction
+- **Purpose and Scope:**
+Second round of testing for updated version of the application.
+  - **Testing Schedule and Environment/Tools:**
+Testing environment were the same, Zaproxy was used with HAR/HUD methods. 4 attacks were simulated in total.
+
+## 2. Summary
+- **Key Findings and Recommendations:**
+  Only one alert was issued, related to User agent fuzzer. Application responds differently when User agent header is changed, and is most likely to happen with the application's responsivity when the application adjusts layout based on the used client. Since this alert was marked informational, no suggested recommendations to fix it.
+
+## 3. Findings and Categorization
+
+- **Categorization:**
+  - **Red (Critical):**  
+  No alerts in this risk level
+
+ - **Yellow (Medium):**
+  No alerts in this risk level
+
+  - **Green (Low):**
+  User agent fuzzer alert, being informational alert doesn't require actions. Alert is most likely happening when application adjusts layout for example, for mobile browsers when simulating different layout insteances.
+
+## 4. Appendices
+- **Test Reports and Supporting Evidence:**
+   [Checkmarx ZAP report](2025-02-27-Penetration-test2.md)
+  
