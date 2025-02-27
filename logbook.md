@@ -22,7 +22,7 @@
 | 15.2.2025 | 2 | penetration testing zap + burp | results + findings for report  |
 | 15.2.2025 | 2 | Writing report| report done  |
 | 26.2.2025 | 2 | Booking system P1.2 | Lecture recording + getting familiar with the task  |
-| x | x | x | x  |
+| 27.2.2025 | 2 | Booking system P1.2 | setting up the updated version of application, round 2 of testing, and updating report  |
 | x | x | x | x  |
 | x | x | x | x  |
 
