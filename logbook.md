@@ -23,6 +23,6 @@
 | 15.2.2025 | 2 | Writing report| report done  |
 | 26.2.2025 | 2 | Booking system P1.2 | Lecture recording + getting familiar with the task  |
 | 27.2.2025 | 2 | Booking system P1.2 | setting up the updated version of application, round 2 of testing, and updating report  |
-| x | x | x | x  |
+| 8.3.2025 | 3 | auth/pass + password hacking with hashcat | lecture recordings |
 | x | x | x | x  |
 
