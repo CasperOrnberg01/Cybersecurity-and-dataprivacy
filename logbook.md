@@ -24,5 +24,9 @@
 | 26.2.2025 | 2 | Booking system P1.2 | Lecture recording + getting familiar with the task  |
 | 27.2.2025 | 2 | Booking system P1.2 | setting up the updated version of application, round 2 of testing, and updating report  |
 | 8.3.2025 | 3 | auth/pass + password hacking with hashcat | lecture recordings |
+| 8.3.2025 | 4 | Booking system phase 2 | Assignment submitted, with zap report + cracked passwords with commands using hashcat |
+| x | x | x | x  |
+| x | x | x | x  |
+| x | x | x | x  |
 | x | x | x | x  |
 
