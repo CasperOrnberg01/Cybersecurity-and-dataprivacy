@@ -2,19 +2,19 @@
 
 | Page / Feature             | Function | Guest | Reserver | Administrator |
 |----------------------------|----------------------------------------|:-----:|:--------:|:--------------:|
-| / (index)                  |x | ✅     |    ✅      |      ✅         |
-| /resources                 | x |  ✅ only see resources form empty    |     ✅ only see resources form empty    |       ✅  only see resources form empty       |
-| /resources?id=XXX          |x |  ❌ can only see empty form, not the particular resource with entered ID   |  ✅⚠️ Reservers can modify reservations made by others, critical.       |     ✅´can modify  reserver made reservations, maybe acceptable as admin?           |
-| /reservation               | x | ❌"Unauthorized"    |     ✅     |       ✅         |
-| /reservation?id=XXX        | x |  ❌ "Unauthorized"    |     ✅     |                |
-| /logout                    | x | ✅    |    ✅      |       ✅         |
-| /login                     | x | ✅    |     ✅     |     ✅           |
-| /register                  | x |  ✅   |     ✅     |       ✅         |
-| /api/resources             | x | ❌cant see resources, just empty form     |    ✅  can see resource information json format    |        ✅ can see resource information json format       |
-| /api/resources/XXX         | x | ❌ cannot see resources "Unauthorized"    |    ✅ can see resources/1 and so on     |        ✅   can see resources/1 and so on      |
-| /api/reservations/XXX      | x | ✅⚠️ Guests can see reservations just like reservers and admins, and none of them shouldnt be able to do so. Discoverable via ID fuzzing, Guests and Reservers can access any reservation   |     ✅⚠️ reservers can see others reservations and reserver_tokens at /api/reservations/1, /api/reservations/2 etc...     | ✅⚠️admin can also see others reservations and reserver_tokens               |
-| /api/users                 | x | ✅⚠️ accessible as guest, which is critical vulnerability. Email/"username" + role + user_token is revealed to guests.     |    ✅⚠️shouldn't be accessible      |     ✅⚠️           |
-| /api/session               | x | ❌     |    ✅ can see own session     |       ✅  can see own session       |
+| / (index)                  | handleIndex(req) + handleDefaultIndex(req) | ✅     |    ✅      |      ✅         |
+| /resources                 | getResources |  ✅ only see resources form empty    |     ✅ only see resources form empty    |       ✅  only see resources form empty       |
+| /resources?id=XXX          |getResourceById(id) |  ❌ can only see empty form, not the particular resource with entered ID   |  ✅⚠️ Reservers can modify reservations made by others, critical.       |     ✅´can modify  reserver made reservations, maybe acceptable as admin?           |
+| /reservation               | handleReservationForm(req) | ❌"Unauthorized"    |     ✅     |       ✅         |
+| /reservation?id=XXX        | getReservationById(id) |  ❌ "Unauthorized"    |     ✅     |                |
+| /logout                    | destroySession(sessionId) | ✅    |    ✅      |       ✅         |
+| /login                     | loginUser(c, info) | ✅    |     ✅     |     ✅           |
+| /register                  | registerUser(c, info) |  ✅   |     ✅     |       ✅         |
+| /api/resources             | getResources(req) | ❌cant see resources, just empty form     |    ✅  can see resource information json format    |        ✅ can see resource information json format       |
+| /api/resources/XXX         | getResourceById(id) | ❌ cannot see resources "Unauthorized"    |    ✅ can see resources/1 and so on     |        ✅   can see resources/1 and so on      |
+| /api/reservations/XXX      | getReservationById(id) | ✅⚠️ Guests can see reservations just like reservers and admins, and none of them shouldnt be able to do so. Discoverable via ID fuzzing, Guests and Reservers can access any reservation   |     ✅⚠️ reservers can see others reservations and reserver_tokens at /api/reservations/1, /api/reservations/2 etc...     | ✅⚠️admin can also see others reservations and reserver_tokens               |
+| /api/users                 | getAllUsers() | ✅⚠️ accessible as guest, which is critical vulnerability. Email/"username" + role + user_token is revealed to guests.     |    ✅⚠️shouldn't be accessible      |     ✅⚠️           |
+| /api/session               | getSession(req) | ❌     |    ✅ can see own session     |       ✅  can see own session       |
 
 
 Symbols used:
