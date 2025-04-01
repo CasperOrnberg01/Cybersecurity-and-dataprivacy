@@ -35,5 +35,7 @@ then found out the oracle version with following injection: '+UNION+SELECT+BANNE
 Lab was done with UNION attack to receive results from the injected query.
 
 
-## Topic:
-### -
+## Topic: Authentication
+### -Username enumeration via subtly different responses
+
+Lab's purpose was to add payload and list of possible usernames and then use grep - extract to find the error message. then u had to watch for one error message that differs from the others to find the username, however i got annoyed by this part and thought if i could just do clusterbomb attack, but it took long so had to stick with the original method, enumerating username first. In the grep section i didn't "fetch" the error response so first it didn't go through. I finally got the username, when i noticed one of the error messages differed from others, missing a dot from "Invalid username or password." After this i swapped payload position to password section and pasted the candidate password list in. I found the password by seeing no error message linked to it, leaving the warning field blank.
