@@ -27,6 +27,6 @@
 | 8.3.2025 | 4 | Booking system phase 2 | Assignment submitted, with zap report + cracked passwords with commands using hashcat |
 | 16.3.2025 | 2 | Lecture recording, getting familiar with phase2part2 + burp suite attack | phase2 - part2,burp suite dictionary attack |
 | 16.3.2025 | 7 | Finishing phase 2 part 2, burp non-dictionary + getting familiar with hydra and using it | Phase 2 part 2 submitted  |
-| x | x | x | x  |
+| 20.3.2025 | 3  | Lecture + phase 3 material | Getting familiar w/ phase 3 assignment |
 | x | x | x | x  |
 
