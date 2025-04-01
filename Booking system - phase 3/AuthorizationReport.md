@@ -5,11 +5,11 @@
 | / (index)                |  ✅   |   ✅     |      ✅        |
 | └─ View resource form    |  ❌   |   ✅     | ✅ *Note added |
 | └─ Create new resource   | ❌ *1 | ❌ *2    | ✅ *3          |
-| /login                   |  ✅   |   ✅     |      ✅        |
-| /register                |  ✅   |   ✅     |      ✅        |
-| /profile                 |  ❌   |   ✅     |      ✅        |
-| /admin/users             |  ❌   |   ❌     |      ✅        |
-| /admin/settings          |  ❌   |   ❌     |      ✅        |
+| /login                   |     |        |              |
+| /register                |     |        |              |
+| /profile                 |     |        |             |
+| /admin/users             |     |        |              |
+| /admin/settings          |     |        |             |
 
 Symbols used:
 ✅ Pass (a note can be added)
