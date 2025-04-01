@@ -22,3 +22,6 @@ Symbols used:
 ❌ Fail (a note can be added)
 ⚠️ Attention (a note can be added)
 
+#⚠Critical notes:
+-guests, reservers and admins can all access /api/reservations/XXX.
+-Everyone can access  /api/users.
