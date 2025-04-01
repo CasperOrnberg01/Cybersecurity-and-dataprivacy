@@ -16,9 +16,9 @@
 
 
 # Optional portswigger labs:
-###Topic: SQL injection
+### Topic: SQL injection
 
-##-SQL injection attack, querying the db type and version on oracle:
+## -SQL injection attack, querying the db type and version on oracle:
 
 Used burp suite's proxy and intercept on to move the request to repeater, where tried injections first to determine number of columns, where responses were for me:
 
@@ -35,5 +35,5 @@ then found out the oracle version with following injection: '+UNION+SELECT+BANNE
 Lab was done with UNION attack to receive results from the injected query.
 
 
-###Topic:
-##-
+### Topic:
+## -
