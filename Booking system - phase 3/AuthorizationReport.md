@@ -28,3 +28,5 @@ Symbols used:
 
 # ZAP REPORT:
 [View full ZAP Scan Report](./ZapReport_phase3.md)
+Zap found other types of issues, related to: Input validation, info disclosure and frontend hints.
+
