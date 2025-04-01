@@ -34,6 +34,6 @@ Zap found other types of issues, related to: Input validation, info disclosure a
 
 - `/api/reservations/1`, `/2`, `/7` returned `200 OK`, reservation data is discoverable with numeric fuzzing
 - Confirms a **horizontal privilege escalation** + **insecure direct object reference**
-- `/api/users` was found again and responds with user info as guest — confirming previously discovered data leak in table
+- `/api/users` was found again and responds with user info as guest, confirming discovered data leak in table
 - No new hidden pages discovered
 
