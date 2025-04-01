@@ -25,3 +25,6 @@ Symbols used:
 #⚠Critical notes:
 -guests, reservers and admins can all access /api/reservations/XXX.
 -Everyone can access  /api/users.
+
+# ZAP REPORT:
+[View full ZAP Scan Report](./ZapReport_phase3.md)
