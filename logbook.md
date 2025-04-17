@@ -30,7 +30,7 @@
 | 20.3.2025 | 3  | Lecture + phase 3 material | Getting familiar w/ phase 3 assignment |
 | 1.4.2025 | 4 | Working on Booking system - phase 3 | Phase 3 submitted  |
 | 1.4.2025 | 1 | Optional portswigger labs | two additional labs from topics: sql injection and authentication, conclusion of them on this repository's main branch in .md file |
-| x | x | x | x |
+| 17.4.2025 | 1 | Booking system p4 recordings | Watched recordings |
 | x | x | x | x |
 | x | x | x | x |
 | x | x | x | x |
