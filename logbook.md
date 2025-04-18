@@ -32,6 +32,6 @@
 | 1.4.2025 | 1 | Optional portswigger labs | two additional labs from topics: sql injection and authentication, conclusion of them on this repository's main branch in .md file |
 | 17.4.2025 | 1 | Booking system p4 recordings | Watched recordings |
 | 17.4.2025 | 4 | Booking system p4 assignment | Getting familiar with the material, steps and completing the phase  |
-| x | x | x | x |
+| 18.4.2025 | 3 | Portswigger labs | Completed 6 portswigger labs on topic SQL-Injection. Also wrote reflections from each lab to .md file on the main branch of this repository. |
 | x | x | x | x |
 | x | x | x | x |
