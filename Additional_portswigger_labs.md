@@ -46,6 +46,7 @@ Lab was done with UNION attack to receive results from the injected query.
 - Longer process than on previous lab, but same approach but this time also had seek for tables where login credentials are stored.
 <br>
 <br>
+
 ## Topic: Authentication
 ### -Username enumeration via subtly different responses
 
