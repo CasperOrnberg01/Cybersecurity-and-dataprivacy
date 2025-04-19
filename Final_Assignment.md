@@ -1,6 +1,7 @@
 # Final assignment for the project and course - Casper Örnberg NTIS22K 
 
 ## Cisco - Introduction to Cybersecurity
+![cybersecurity - cisco](cisco.png)
 -
 -
 -
