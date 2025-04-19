@@ -28,7 +28,7 @@
 
 ## Logbook
 
--Total hours here
--Hours per topic / link to logbook?
+### Total hours
+### Hours per topic / link to logbook?
 
 ## (optioonal) Feedback
