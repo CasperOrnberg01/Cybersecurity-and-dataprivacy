@@ -2,18 +2,33 @@
 
 ## Mandatory labs conclusions submitted in itsLearning:
 
--Sql injection vulnerability in WHERE clause allowing retrieval of hidden data
+###  Lab: Sql injection vulnerability in WHERE clause allowing retrieval of hidden data
+- I learned to commit a simple SQLi on a vulnerable application that forwards them into its database. I modified sql query to allow me to access and see the unreleased products in the “webshop”. I added quote mark after category = to close the category string and then 1=1 which makes the argument true. I also learned, that most sqli vulnerabilities are in the “where” part of select query.
+<br>
+<br>
 
--SQL injection vulnerability allowing login bypass
+### Lab: SQL injection vulnerability allowing login bypass
+- I learned that application checks the used credentials by performing sql query from the credentials section. This lab also demonstrated an sqli happening in the where clause of query. Interesting part of this lab was the fact, that if the application is vulnerable enough u can bypass the log in and get it as administrator. The material had the lab pretty well covered, but I noticed that in the password field u could type anything after adding quote mark in it and it would still log in. Apparently the password was bypassed by the “—“ what was written after “administrator” in the username section, which removed the password check from where clause.
+<br>
+<br>
 
--Username enumeration via different responses
+### Lab: Username enumeration via different responses
+- I learned to to do username enumeration with burpsuite by looking at different responses. Finding out the username, I did brute force attack based on the gived candidate password list. I knew that username was found when lenght was different from the others, and password was right one from the status code. However, I had problems with this lab since I have norton antivirus on my pc, so everytime i started brute force attack on password, norton just blocked and moved Burp suite’s chrome.exe to quarantine and identified it as “IDP.Generic” threat. However, I had to delete every burpsuite associated file, and then disable auto-protect + auto-firewall and reinstall burpsuite and then move the files to “expections” so antivirus wont mess with them no more.
+<br>
+<br>
 
--Password reset broken logic
+### Lab: Password reset broken logic
+- I learned to exploit vulnerability, where I resetted user’s password by changing user parameter to my own username. then I received password reset token, which I just modified to “x” and set the username as “carlos”. then I was able to set carlo’s password to what ever I wanted. Then I was able to log in as “Carlos” and complete the lab.
+<br>
+<br>
 
--Unprotected admin functionality
+### Lab: Unprotected admin functionality
+- learned to exploit a vulnerability in unprotected admin panel, where the goal was to gain access to admin functionality: delete users. This was achieved by modifying the url to gain access to the unprotected admin panel. Some could say that it’s protection is based on the fact, that most of people wouldn’t realise to try out modifying the url to “admin-panel”,”admin”, “administrator” or etc… The admin panel was accessed by modifying the end of the url to “administrator-panel”. Now we have accessed the admin features, and we are able to delete users.
+<br>
+<br>
 
--User role can be modified in user profile
-
+### Lab: User role can be modified in user profile
+- I learned that in the lab the vulnerability was client’s ability to change the roleid to whatever client wants. This was possible, because the application had broken access control vulnerability. This lab was one example of parameter based access conjtrol methods, where application determined user’s access rights at login and stored the information, but the user is able to modify the value, which in this case was roleid. roleid by default was equal to 1 and by setting the roleid equal to 2 gained the admin rights.
 
 # Optional portswigger labs:
 ## Topic: SQL injection
