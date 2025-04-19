@@ -57,8 +57,8 @@ Total portswigger labs completed: 20 (6 mandatory + 14 optional)
 ## Logbook
 
 ### Total hours
-
-### Hours per topic / link to logbook?
+- 69 hours + (upcoming final exam?)
+###Link to logbook
 [Link to logbook](logbook.md)
 
 ## (optioonal) Feedback
