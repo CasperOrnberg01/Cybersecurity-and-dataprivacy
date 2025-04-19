@@ -33,5 +33,5 @@
 | 17.4.2025 | 1 | Booking system p4 recordings | Watched recordings |
 | 17.4.2025 | 4 | Booking system p4 assignment | Getting familiar with the material, steps and completing the phase  |
 | 18.4.2025 | 3 | Portswigger labs | Completed 6 portswigger labs on topic SQL-Injection. Also wrote reflections from each lab to .md file on the main branch of this repository. |
-| x | x | x | x |
+| 19.4.2025 | 1 | Finalizing project and assignments -recording  | Rewatched the lecture before starting to work on last portswiggers and the final assingment |
 | x | x | x | x |
