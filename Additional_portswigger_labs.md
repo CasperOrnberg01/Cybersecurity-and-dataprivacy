@@ -82,7 +82,52 @@
 <br>
 <br>
 
+### Lab: SQL injection UNION attack, retrieving multiple values in a single column
+- Dtermining number of columns: order by 3-- = internal server error, order by 2-- = status 200 ok == 2 columns
+- Columns that have text: ' UNION SELECT NULL, 'a'-- == 200 ok
+- Getting credentials from user table: '+UNION+SELECT+NULL,username||'~'||password+FROM+users-- == skim through credentials and find admin logins --> log in as admin
+- Lab's purpose was to perform UNION injection, that returns multiple values in single column. on Previous labs the values have been on separate columns.
+
+<br>
+<br>
+
 ## Topic: Authentication
 ### Lab: Username enumeration via subtly different responses
 
 - Lab's purpose was to add payload and list of possible usernames and then use grep - extract to find the error message. then u had to watch for one error message that differs from the others to find the username, however i got annoyed by this part and thought if i could just do clusterbomb attack, but it took long so had to stick with the original method, enumerating username first. In the grep section i didn't "fetch" the error response so first it didn't go through. I finally got the username, when i noticed one of the error messages differed from others, missing a dot from "Invalid username or password." After this i swapped payload position to password section and pasted the candidate password list in. I found the password by seeing no error message linked to it, leaving the warning field blank.
+
+## Topic: Access control
+### Lab: User ID controlled by request parameter
+- Getting familiar with the application behaviour with given credentials, and logging in with them.
+- Checked if it's client controlled, by changing given user ID to "carlos" in repeater's request, where response contained "carlos" API KEY.
+- Vulnerability was that you are able to obtain same priviledge level users account access just by changing the username ID to the wanted one.
+
+<br>
+<br>
+
+### Lab: Unprotected admin functionality with unpredictable URL
+- Lab's purpose was to exploit vulnerability of the admin panel. I reviewed source code with developer tools and there was leftover JS function that revealed the admin directory. adding this to URL accessed the admin panel.
+- Deleted wanted user and completed the lab.
+
+<br>
+<br>
+
+### Lab: User role controlled by request parameter
+- In burp used repeater to to observe response codes when changing cookie value "admin" from false to true.
+- I completed the lab by going on the browser, using developer tools to inspect the application cookies, and there manually set admin value to true. This gave me access to admin panel, where I deleted the wanted user.
+
+<br>
+<br>
+
+### Lab: User ID controlled by request parameter, with unpredictable user IDs
+- Lab's purpose was to gain access to other user's account by finding the GUID.
+- I looked for blog post that was created by user "carlos", and noticed that GET request leaked the userID for carlos.
+- I sent my users get request to repeater, where I changed my GUID to the leaked carlos GUID. This gave me the API key for carlos, and completed the lab.
+
+<br>
+<br>
+
+### Lab: User ID controlled by request parameter with data leakage in redirect
+- Similar lab to the previous access control labs, where I had to obtain API key for user carlos.
+- This was really easy and fast to do, since I completed the previous labs on the topic, where first I logged in with the given credentials, and saw that it takes the id of user, where I just sent it into repeater, and changed my user ID to "carlos". Then I got API key for carlos and lab completed. Redirect leaked the page for carlos.
+
