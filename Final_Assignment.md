@@ -73,7 +73,7 @@ Total portswigger labs completed: 20 (6 mandatory + 14 optional)
 [Link to logbook](logbook.md)
 
 ### Reflection on logbook
-- Felt like logbook's purpose was to track the used hours on the course, and maybe estimate how long different subjects and assignments took to complete. 
+- Felt like logbook's purpose was to track the used hours on the course, and maybe estimate how long different subjects and assignments took to complete. Good tool to also analyze what has been done.
 
 ## (optional) Feedback
 - I personally enjoyed the course, found it really interesting, and liked the approach where students has to set up the testing environment and dependecies by themselves.
