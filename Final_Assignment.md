@@ -14,6 +14,8 @@ I can't access the material anymore, since I completed it months ago, but if I r
 ![portswigger - dashboard](psw.jpg)
 Link to my reflections on portswigger labs: [Portswigger labs - Reflections](Additional_portswigger_labs.md)
 <br>
+Total portswigger labs completed: 20 (6 mandatory + 14 optional)
+<br>
 <br>
 
 ## The Booking System project
